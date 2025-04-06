@@ -34,12 +34,13 @@ def check_parentheses(s: str) -> bool:
 
     ilosc_nawiasow_otwierajacych = s.count("(")
     ilosc_nawiasow_zamykajacych = s.count(")")
+
+    ### return False - powinno być zmienione i zwrócić prawdziwy wynik (zgodny z oczekiwaniami)
     if ilosc_nawiasow_otwierajacych != ilosc_nawiasow_zamykajacych:
         return False
     else:
         return True
 
-    ### return False - powinno być zmienione i zwrócić prawdziwy wynik (zgodny z oczekiwaniami)
 
 # Przykładowe wywołanie:
 if __name__ == "__main__":
