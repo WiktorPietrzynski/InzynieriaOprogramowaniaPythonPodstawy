@@ -47,7 +47,8 @@ def index_documents(documents: list[str], queries: list[str]) -> list[list[int]]
     Returns:
         list[list[int]]: Lista wyników dla kolejnych zapytań.
     """
-    ### TUTAJ PODAJ ROZWIĄZANIE ZADANIA
+    #  TUTAJ PODAJ ROZWIĄZANIE ZADANIA
+
     wynik = []
     for query in queries:
         count_list = []
