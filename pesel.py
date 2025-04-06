@@ -34,15 +34,16 @@ def verify_pesel(pesel: str) -> int:
     for i in range(10):
         suma = suma + (int(pesel[i]) * wagi[i])
     suma = suma + int(pesel[-1])
+
+    # return 0 - powinno być zmienione i zwrócić prawdziwy wynik (zgodny z oczekiwaniami)
     if str(suma)[-1] == "0":
         return 1
     else:
         return 0
 
-    # return 0 - powinno być zmienione i zwrócić prawdziwy wynik (zgodny z oczekiwaniami)
-
-
 # Przykładowe wywołanie:
+
+
 if __name__ == "__main__":
     pesel_input = "97082123152"
     print(verify_pesel(pesel_input))  # Oczekiwane wyjście: 0
